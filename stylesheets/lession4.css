@@ -1,0 +1,66 @@
+.move{
+  background-color: red;
+  position: relative;
+  border: solid 1px #DDD;
+  border-radius: 40px;/*圆角边框*/
+  /*-moz-border-radius:40px;
+  -o-border-radius:40px;
+  -webkit-border-radius:40px;*/
+  box-shadow: 0px 0px 10px blue ;/*必需:水平阴影的位置  必需:垂直阴影的位置 模糊距离 阴影的颜色 //将外部阴影 (outset) 改为内部阴影。*/
+  /*-moz-box-shadow:10px 5px 5px #888888;
+  -o-box-shadow:10px 5px 5px #888888;
+  -webkit-box-shadow:10px 5px 5px #888888;*/
+  text-align:center;
+  padding: 10px;
+  height: 150px;
+  width: 150px;
+  left: 20px;
+  top: 30px;
+  animation:mymove 10s infinite;/*需要绑定到选择器的 keyframe 名称  完成动画所花费的时间  infinite:规定动画应该无限次播放。*/
+  -moz-animation:mymove 10s infinite;
+  -webkit-animation:mymove 10s infinite;
+  -o-animation:mymove 10s infinite;
+  animation-direction:alternate;/*是否应该轮流反向播放动画。normal 默认值 正常播放。*/
+  /*
+  animation-timing-function:linear; 动画从头到尾的速度是相同的。
+  而默认的ease是动画以低速开始，然后加快，在结束前变慢。
+  */
+} 
+
+@keyframes mymove
+{
+  0%   {background-color: red;left: 20px;top: 30px;transform:rotate(0deg);}/*整个周期是10s，6s后开始动画，整个变化过程是4s*/
+  60%  {background-color: red;left: 20px;top: 30px;transform:rotate(30deg);}
+  70%  {background-color: yellow;left:400px;top:30px;transform:rotate(0deg);}
+  80%  {background-color: blue;left: 400px;top:400px;transform:rotate(0deg);}
+  90%  {background-color: green;left:20px;top:400px;transform:rotate(0deg);}
+  100% {background-color: red;left: 20px;top: 30px;transform:rotate(0deg);}
+}
+  /*@-moz-keyframes mymove
+  {
+  0%   {background-color: red;left: 20px;top: 30px;}
+  60%  {background-color: red;left: 20px;top: 30px;}
+  70%  {background-color: yellow;left:400px;top:30px;}
+  80%  {background-color: blue;left: 400px;top:400px;}
+  90%  {background-color: green;left:20px;top:400px;}
+  100% {background-color: red;left: 20px;top: 30px;}
+  }
+  @-o-keyframes mymove
+  {
+  0%   {background-color: red;left: 20px;top: 30px;}
+  60%  {background-color: red;left: 20px;top: 30px;}
+  70%  {background-color: yellow;left:400px;top:30px;}
+  80%  {background-color: blue;left: 400px;top:400px;}
+  90%  {background-color: green;left:20px;top:400px;}
+  100% {background-color: red;left: 20px;top: 30px;}
+  }
+  @-webkit-keyframes mymove
+  {
+  0%   {background-color: red;left: 20px;top: 30px;}
+  60%  {background-color: red;left: 20px;top: 30px;}
+  70%  {background-color: yellow;left:400px;top:30px;}
+  80%  {background-color: blue;left: 400px;top:400px;}
+  90%  {background-color: green;left:20px;top:400px;}
+  100% {background-color: red;left: 20px;top: 30px;}
+  }
+*/

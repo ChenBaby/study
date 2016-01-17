@@ -1,0 +1,18 @@
+#div1{
+  float:left;
+}
+#img1{
+  width:20px;
+  height: 20px; 
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  display: inline;
+}
+a{
+  text-decoration: none;
+}

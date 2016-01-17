@@ -1,0 +1,39 @@
+.picture-container{
+  background-image: url(../images/picture1.jpg);
+  width: 200px;
+  height: 200px;
+  background-size: 100% 100%;
+  position: relative;
+}
+.big-div{
+  background-color: #000;
+  height: 100%;
+  opacity: 0;
+}
+.big-div div{
+  position: absolute;
+  left: 30px;
+  right:30px;
+  top:30px;
+  bottom:30px;
+  transition:0.85s;
+}
+.small-div1{
+  border-top: solid 1px #CB3712;
+  border-bottom: solid 1px #CB3712;
+  transform:scale(0,1);
+}
+.small-div2{
+  border-left: solid 1px #CB3712;
+  border-right: solid 1px #CB3712;
+  transform:scale(1,0);
+}
+.picture-container:hover .big-div{
+  opacity: 0.5;
+  transition:0.25s;
+}
+.picture-container:hover .small-div1,.picture-container:hover .small-div2{
+  transform:scale(1,1);
+}
+
+

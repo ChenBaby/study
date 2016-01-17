@@ -1,0 +1,89 @@
+.header{
+	width: 100%;
+	height: 400px;
+	background-image: url(../images/background.jpg);
+	background-size: 100% 140%;
+}
+body{
+	margin: 0px;
+}
+.sysname{
+	margin: 0px; 
+	margin-left: 100px;
+	padding-top: 10px;
+	font-size: 25px;
+	color: #FFF;
+}
+.header1{
+	float: left;
+	font-size: 30px;
+	color: #FFF;
+	position: absolute;
+	left: 300px;
+	top: 50px;
+}
+.header2{
+	width: 250px;
+	height: 250px;
+	float: right;
+	background:rgba(0,0,0,0.5);
+	color: #FFF;
+	padding: 15px;
+	position: absolute;
+	right: 200px;
+	top: 25px;
+}
+.header2 form{
+	width: 100%;
+	border-top: solid 1px #EEE;
+	border-bottom: solid 1px #EEE;
+	padding: 10px 0px;
+}
+.header2 p{
+	margin: 0px 0px 15px 0px;
+}
+.header2 a{
+	text-decoration: none;
+	color: #FFF;
+}
+.header2 a, .header2 label{
+	font-size: 14px;
+	font-weight: 100;
+}
+.remember-container {
+	padding: 5px 0px;
+}
+.username, .userpaw, .login{
+	margin: 5px auto;
+	border-radius: 2px;
+	border: 0px ;
+	padding: 5px;
+}
+.username, .userpaw{
+	width: 240px;
+	height: 30px;
+}
+.login{
+	width: 100%;
+	height: 40px;
+	background-color: #F7671D;
+	color:  #FFF;
+	font-size: 17px;
+	border-width: 0px;
+	cursor: pointer;
+}
+.remember{
+	float: left;
+}
+.regetpaw{
+	float: right;
+}
+#register{
+	color: #FF9933;
+}
+.loginblock{
+	position: relative;
+}
+.clearfix{
+	clear: both;
+}

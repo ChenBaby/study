@@ -1,0 +1,133 @@
+body{
+	margin: 0px;
+  background: url(../images/reg_repeat_bg.png) repeat-x #bee1f5;
+}
+.regist{
+	width: 100%;
+}
+.regist label{
+  position: relative;
+  font-style: italic;
+  top: 50px;
+}
+.regist-header{
+	width: 900px;
+	height: 186px;
+	font-size: 28px;
+	text-align: center;
+	margin: 0px auto ;
+	background-image: url(../images/bg_reg_wave.png);
+	background-size: 112%;
+}
+.regist-now, .about{
+  padding-left: 105px; 
+}
+.regist-details{
+	width: 800px;
+	margin: 0px auto;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	padding: 40px;
+}
+.details-header{
+	width: 82px;
+	border-bottom: solid 3px #FFA00A;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+.user-Tel{
+  margin-top: 40px ;
+  margin-left: 100px;
+  position: relative;
+}
+.user-Tel input {
+  width: 200px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.information1,.information2,.information3{
+  position: relative;
+}
+
+.user-account,.user-password, .again-password{
+  position: relative;
+  width: 200px;
+}
+#reader-account, #reader-password , #reader-again-password{
+  padding-left: 35px;
+}
+#name-span1, #password-span1,#again-password-span1{
+  position: absolute;
+  left:10px;
+  top: 9px;
+  z-index: 1;
+}
+#name-span2  , #password-span2 ,#again-password-span2{
+  position: absolute;
+  right:10px;
+  top: 9px;
+  z-index: 1;
+  color: green;
+  display: none;
+}
+#name-span3  , #password-span3, #again-password-span3{
+  position: absolute;
+  right:10px;
+  top: 9px;
+  z-index: 1;
+  color: red;
+  display: none;
+}
+.Tip1,.Tip2,.Tip3,.Tip4,.Tip5,.Tip6{
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  left: 250px;
+  top: 0px;
+  padding-top: 5px;
+  display: none;
+}
+.Tip1 p, .Tip2 p, .Tip3 p, .Tip4 p, .Tip5 p, .Tip6 p{
+  margin-left: 20px;
+}
+#name-span4,#password-span4, #again-password-span4{
+  color: blue;
+  position: absolute;
+  top: 9px;
+  left: 0px;
+}
+#name-span5, #password-span5 ,#again-password-span5{
+  color: red;
+  position: absolute;
+  top: 9px;
+  left: 0px;
+}
+.user-Tel a{
+  text-decoration: none;
+  font-size: 14px;
+}
+.user-Tel a:link,.user-Tel a:visited,.user-Tel a:hover, .user-Tel a:active{
+  color: #0A8CD2;
+}
+.user-Tel a:hover{
+  text-decoration: underline;
+}
+.user-Tel > div{
+  margin-top: 10px ;
+  margin-bottom: 10px ;
+}
+
+.regist-button {
+  background-color: #FFA921;
+  color: #FFF;
+  font-size: 15px;
+  border: 0px;
+  cursor: pointer;
+  outline: none;
+}
+.about > div{
+  padding: 1px 0px;
+}
+
+
+

@@ -1,0 +1,55 @@
+* {
+  font-size: 12px;
+}
+ul,li,.header-weather,.header-left,.header-right {
+  display: inline;
+}
+ul {
+  padding: 0px;
+}
+li {
+  margin: 0px 10px;
+}
+li a {
+  color: #333
+}
+.header-left {
+  float: left;
+}
+.header-right {
+  float: right;
+}
+.header-right ul {
+  margin-right: 110px
+}
+.header-right ul :nth-child(-n+6) {
+  font-weight: bold;
+}
+.header-right ul li a{
+  font-size: 13px;
+}
+.header-right ul li.more {
+  background-color: #00BFFF;
+  position: absolute;
+  text-align: center;
+  padding-top: 7px;
+  bottom: 0px;
+  width: 100px;
+  right: 0px;
+  top: 0px;
+}
+.header-right ul li.more a {
+  text-decoration: none;
+  color: #FFF; 
+}
+.clearfix {
+  clear: both;
+}
+.baidu-header {
+  border-bottom: solid 1px #DDD;
+  position: fixed;
+  padding: 8px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}

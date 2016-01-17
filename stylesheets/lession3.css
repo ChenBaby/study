@@ -1,0 +1,58 @@
+li{
+  list-style-type: none;
+  margin:  0px 10px;
+}
+a{
+  color: #000;
+  font-size: 10px;
+}
+.weather a{
+  text-decoration: none;
+}
+.header-right a{
+  font-size: 13px;
+}
+ul,li,.weather,.header-left,.header-right,.header-p{
+  display: inline;
+}
+.header-left{
+  float: left;
+}
+.header-right{
+  float:right;
+}
+.header-right ul{
+  margin-right: 110px;
+}
+.header-right ul li.more{
+  background-color: #00Afff;
+  text-align: center;
+  position:absolute;
+  padding-top: 7px;
+  width: 100px;
+  bottom: 0px;
+  right: 0px;
+  top:0px;
+}
+.header-right ul li.more a{
+  text-decoration: none;
+  color: #FFF;
+}
+.header-right ul li:nth-child(-n+6){
+  font-weight:bold;
+}
+.header-detail{
+  padding: 0px;
+}
+
+.clearfix{
+  clear: both;
+}
+.baidu-header{
+  border-bottom: 1px solid #DDD;
+  position: fixed;
+  padding: 7px;
+  width: 100%;
+  left:0px;
+  top:0px;
+}

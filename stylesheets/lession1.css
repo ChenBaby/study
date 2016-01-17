@@ -1,0 +1,44 @@
+body{
+  background-color: yellow;
+  
+}
+#div1{
+  background-color: gray;
+  position: absolute;
+  margin-top: 40px;
+  transition:2s;
+  height: 800px;
+  width: 20%;
+  z-index: 8;
+  left:0px;
+  top: 0px;
+}
+#div2{
+  width: 20%;
+  height: 200px;
+  background-color: red;
+  transition:2s;
+  position: relative;
+  z-index: 1;
+}
+#div2:hover{
+  background-color: pink;
+  transform :rotate(30deg);
+  -ms-transform:rotate(30deg);
+  -moz-transform:rotate(30deg);
+  -webkit-transform:rotate(30deg);
+  -o-transform:rotate(30deg);
+  width: 300px;
+  height: 300px;
+}
+p{
+  background-color: green;
+  position: absolute;
+  margin: 0px;
+  padding: 8px;
+  color: #FFF;
+  z-index:10;
+  left:0px;
+  top: 0px;
+  
+}

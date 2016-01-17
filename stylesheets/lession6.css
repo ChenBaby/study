@@ -1,0 +1,36 @@
+.anim_box{
+  position: relative;
+}
+.anim_image{
+  transition:all 1s ease-in-out;
+  -moz-transition:1s ease-in-out;
+  -webkit-transition:1s ease-in-out;
+  -o-transition:1s ease-in-out;
+  cursor:pointer;/*鼠标变为手型*/
+}
+.anim_image_bottom{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  transform:scale(0,0);
+  -moz-transform:scale(0,0);
+  -webkit-transform:scale(0,0);
+  opacity: 0;
+  z-index: -1;
+}
+
+.anim_box:hover .anim_image_top{
+  transform: scale(0,0);
+  -moz-transform: scale(0,0);
+  -webkit-transform: scale(0,0);
+  transform-origin:bottom left;/*坐标中心点就是左下角位置。于是动画(图片收缩）就是基于图片的左下角这一点*/    
+}
+.anim_box:hover .anim_image_bottom{
+  opacity: 1;
+  transform:scale(1,1);
+  -moz-transform:scale(1,1);
+  -webkit-transform:scale(1,1);
+  transform-origin:top right;
+  -moz-transform-origin:top right;
+  -webkit-transform-origin:top right;
+}

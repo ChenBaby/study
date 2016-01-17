@@ -1,0 +1,44 @@
+.picture-group{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-image: url(../images/picture1.jpg);/*img文件的路径：当前文件夹（css文件夹）（./）找，找不到 ，要返回上一级目录（../）再找不到要返回上上级目录（../../）*/
+  background-size: 100% 100%;
+}
+.picture-group1{
+  border-top:solid 1px #CB2137;
+  border-bottom:solid 1px #CB2137;
+  position: absolute;
+  top:30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  transition: 0.85s;
+  transform:scale(0,1);
+}
+.picture-group2{
+  border-left:solid 1px #CB2137;
+  border-right:solid 1px #CB2137;
+  position: absolute;
+  top:30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  transition: 0.85s;
+  transform:scale(1,0);
+}
+
+.picture-group:hover .picture-group1, .picture-group:hover .picture-group2{
+  transform:scale(1,1);
+}
+.pic {
+  opacity: 0;
+  height: 100%;
+}
+.pic:hover {
+  opacity: 0.5;
+  background-color: #000;
+  transition: 0.25s;
+  cursor: pointer;
+}
+

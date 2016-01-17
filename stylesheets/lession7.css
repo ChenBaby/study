@@ -1,0 +1,21 @@
+.squ1{
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+  transition:2s;
+  position:relative;
+  left: 20px;
+  top: 30px;
+}
+.squ1-squ2
+{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transition:2s;
+  position:relative;
+  left: 20px;
+  top: 30px;
+  transform:rotate(30deg);
+}
+ 

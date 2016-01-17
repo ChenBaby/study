@@ -1,0 +1,56 @@
+.picture-group{
+  width: 500px;
+  height: 400px;
+  position: relative;
+  padding: 5px;
+  background-image: url(../images/picture1.jpg);/*img文件的路径：当前文件夹（css文件夹）（./）找，找不到 ，要返回上一级目录（../）再找不到要返回上上级目录（../../）*/
+  background-size: 100% 100%;
+}
+.picture-group:hover .picture-group1,.picture-group:hover .picture-group3{
+  width: 200px;
+}
+.picture-group:hover .picture-group2,.picture-group:hover .picture-group4{
+  height: 200px;
+}
+.picture-group:hover .picture-group-h{
+  padding: 0px;
+}
+.picture-group1{
+  /*background-color: gray;*/
+  border-bottom: solid 1px #CB2137;
+  transition:2s;
+  width: 100px;
+  height: 50px;
+  margin: 50px auto 0px;
+}
+.picture-group2{
+  /*background-color: blue;*/
+  border-right:  solid 1px #CB2137;
+  transition:2s;
+  float: left;
+  width: 150px;
+  height: 100px;
+}
+.picture-group3{
+  /*background-color: pink;*/
+  border-top: solid 1px #CB2137;
+  transition:2s;
+  width: 100px;
+  height: 50px;
+  margin: 0px auto;
+}
+.picture-group4{
+  /*background-color: purple;*/
+  border-left: solid 1px #CB2137;
+  transition:2s;
+  float: right;
+  width: 150px;
+  height: 100px;
+}
+.picture-group-h{
+  padding: 50px 0px;
+  transition:2s;
+}
+.clearfix{
+  clear: both;
+}
